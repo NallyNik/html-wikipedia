@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Itim', cursive;
+    background-image: url(../images/background-1b.jpg);
 }
 ul {
     list-style: none;
@@ -11,13 +12,25 @@ a {
     color: black;
     text-decoration: none;
 }
+li:hover {
+    background-color: #ffe6d0;
+    border: outset 5px #ffd3a9;
+}
+li li:hover {
+    background-color: #ffd3a9;
+    border: none;
+}
+
 header {
     max-height: 13rem;
     background-image: url(../images/background-7b.png);
+    background-color: #ffebd4;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-attachment: fixed;
     background-size: 50%;
     padding: 15px;
-    border-bottom: solid 5px rgb(252, 205, 162);
-    background-color: rgba(252, 205, 162, 0.3);
+    border-bottom: solid 5px #ffd3a9;
     position: relative;
     z-index: 2;
 }
@@ -25,14 +38,21 @@ header #catpedia {
     width: 300px;
     font-size: 4rem;
     background-color: white;
-    border: solid 5px rgb(252, 205, 162);
+    border: solid 5px #ffd3a9;
     border-radius: 15rem;
-    padding: 3%;
+    padding: 2%;
     display: flex;
     justify-content: center;
-    margin: 5rem 28rem 0 28rem;
+    margin: auto;
+    margin-top: 9rem;
 }
-
+figure {
+    text-align: center;
+}
+img {
+    border: solid 15px #ffe6d0;
+    border-image: url('../images/background-6b.png') 60 repeat;
+}
 .content {
     max-width: 1440px;
     margin: auto;
@@ -49,7 +69,7 @@ header #catpedia {
     position: relative;
     padding: 5rem 15rem;
     text-align: justify;
-    background-image: url(../images/background-1b.jpg);
+    
     z-index: 0;
 
 }
@@ -61,10 +81,9 @@ header #catpedia {
     right: 2%;
     z-index: 1;
 }
-figure {
-    text-align: center;
-}
 .footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+    min-height: 50px;
+    border-top: solid 1px #ffd3a9;
+    background-color: #ffe6d0;
+    padding-left: 2%;
 }
